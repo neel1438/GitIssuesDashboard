@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Github Open Issues</title>
+
+</head>
+<body>
+	<h1>Github Open Issues</h1>
+	<div class="row">
+		<div class="input-field col s6">
+          <input id="repoLink" type="text" class="validate">
+          <label for="repoLink">Enter the Github repository link</label>
+        </div>
+        <div class="input-field col s2">
+          <a class="waves-effect waves-light btn" data-action="submit">submit</a>
+        </div>
+	</div>
+	<div class="row dataRow">
+		<div class="row">
+		    <div class="col s12">
+		      <ul class="tabs">
+		        <li class="tab col s3"><a class="active all" href="#all">all</a></li>
+		        <li class="tab col s3"><a href="#24h" class= "24h">Last 24 hours</a></li>
+		        <li class="tab col s3"><a href="#7d" class="7d">Last 7 Days</a></li>
+		        <li class="tab col s3"><a href="#gt7d" class="gt7d">More Than 7 days Older</a></li>
+		      </ul>
+		    </div>
+		    <div id="all" class="col s12 tabContent"></div>
+		    <div id="24h" class="col s12 tabContent"></div>
+		    <div id="7d" class="col s12 tabContent"></div>
+		    <div id="gt7d" class="col s12 tabContent"></div>
+		</div>
+        
+	</div>
+	
+        
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="static/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="static/css/index.css">
+</body>
+</html>
